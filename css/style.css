@@ -1,3 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,600&family=Open+Sans:wght@400;700&display=swap');
+
+nav {
+	font-size: 13px;
+}
+
+.nav-item::after {
+	content: "";
+	display: block;
+	width: 0px;
+	height: 2px;
+	background: black;
+	transition: 0.2s;
+}
+.current::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: black;
+}
+.nav-item:hover::after {
+	width: 100%;
+}
 .bg-alabaster {
     background-color: #f0efe5;
+}
+.bg-licorice {
+	background-color: #1C110A;
+}
+body {
+	background: black;
+	font-family: 'Open Sans', sans-serif;
+	overflow-y: hidden;
+}
+.display-none {
+	display: none;
+}
+svg {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 150px;
+	width: 150px;
+}
+.pasfoto {
+	height: 300px;
+	width: 300px;
+	border-radius: 2px;
+	z-index: 2;
+}
+
+.outline {
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 40px;
+	height: 300px;
+	width: 300px;
+	outline: 1.9px solid white;
+	border-radius: 2px;
+	z-index: 1;
+}
+
+.line {
+	position: absolute;
+	left: 80px;
+	border-right: 2px solid white;
+}
+
+.icons {
+	cursor: pointer;
 }

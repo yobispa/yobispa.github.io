@@ -12,7 +12,8 @@
     <title>Portfolio | Y.Obispa</title>
 </head>
 
-<body class="bg-alabaster">
+<body>
+    <div class="display-none">
      <nav class="navbar navbar-expand-md bg-alabaster">
           <div class="container">
             <a class="navbar-brand" href="#"><i class="fa fa-instagram" aria-hidden="false">Y. Obispa</i></a>
@@ -20,29 +21,116 @@
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+            <div class="collapse navbar-collapse d-flex flex-row-reverse" id="collapsibleNavId">
+                <ul class="navbar-nav m-2">
+                    <li class="current">
+                        <a class="nav-link active" href="#" aria-current="page">HOME<span class="visually-hidden">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">ABOUT</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
                     </li>
                 </ul>
-                <form class="d-flex my-2 my-lg-0">
-                    <input class="form-control me-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
             </div>
        </div>
      </nav>
      
+     <div class="container-fluid vh-100 d-flex align-items-center text-white pb-5">
+        <div class="row">
+            <div class="col-md-1">
+                <div class="line h-50"></div>
+                <div class="icons d-flex flex-column mt-5 p-3">
+                    <i class="bi bi-instagram fs-3"></i>
+                    <i class="bi bi-whatsapp fs-3"></i>
+                    <i class="bi bi-linkedin fs-3"></i>
+                    <i class="bi bi-envelope-at fs-3"></i>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                <h2><b>Front-end Developer</b></h2>
+                <p>
+                    Hi there my name is Yoandel Obispa and I specialize in transforming ideas into interactive and visually stunning websites. My expertise lies in leveraging the latest frameworks combined with a strong foundation in HTML, CSS, and JavaScript, to craft seamless user interfaces that engage and delight visitors.
+                </p>
+                </div>
+            </div>
+
+            <div class="col-md-5 d-flex justify-content-center align-items-center">
+                <img src="/media/pasfoto.jpg" alt="" class="pasfoto">
+                <div class="outline"></div>
+            </div>
+        </div>
+     </div>
+</div>
+     <svg viewBox="0 0 100 100">
+        <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
+            <!-- left line -->
+            <path d="M 21 40 V 59">
+                <animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="rotate"
+          values="0 21 59; 180 21 59"
+          dur="2s"
+          repeatCount="indefinite" />
+            </path>
+            <!-- right line -->
+            <path d="M 79 40 V 59">
+                <animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="rotate"
+          values="0 79 59; -180 79 59"
+          dur="2s"
+          repeatCount="indefinite" />
+            </path>
+            <!-- top line -->
+            <path d="M 50 21 V 40">
+                <animate
+          attributeName="d"
+          values="M 50 21 V 40; M 50 59 V 40"
+          dur="2s"
+          repeatCount="indefinite" />
+            </path>
+            <!-- btm line -->
+            <path d="M 50 60 V 79">
+                <animate
+          attributeName="d"
+          values="M 50 60 V 79; M 50 98 V 79"
+          dur="2s"
+          repeatCount="indefinite" />
+            </path>
+            <!-- top box -->
+            <path d="M 50 21 L 79 40 L 50 60 L 21 40 Z">
+            <animate
+          attributeName="stroke"
+          values="rgba(255,255,255,1); rgba(100,100,100,0)"
+          dur="2s"
+          repeatCount="indefinite" />
+            </path>
+            <!-- mid box -->
+            <path d="M 50 40 L 79 59 L 50 79 L 21 59 Z"/>
+            <!-- btm box -->
+            <path d="M 50 59 L 79 78 L 50 98 L 21 78 Z">
+            <animate
+          attributeName="stroke"
+          values="rgba(100,100,100,0); rgba(255,255,255,1)"
+          dur="2s"
+          repeatCount="indefinite" />
+            </path>
+            <animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="translate"
+          values="0 0; 0 -19"
+          dur="2s"
+          repeatCount="indefinite" />
+        </g>
+    </svg>
 </body>
 </html>
