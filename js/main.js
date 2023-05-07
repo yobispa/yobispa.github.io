@@ -1,3 +1,4 @@
+//JS
 console.log("JS Loaded")
 setTimeout(removeDN, 3000)
 
