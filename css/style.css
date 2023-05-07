@@ -156,12 +156,22 @@ svg {
 
 	.line {
 		position: relative;
-		top: 22vh;
+		top: 97px;
 		left: 10px;
 		height: 20%;
 		width: 96%;
 		border-right: none;
 		border-bottom: 2px solid white;
+	}
+
+	.c-rm {
+		margin-top: 100px;
+	}
+	.c-mp {
+		margin-top: 40px;
+	}
+	.c-p {
+		padding: 8%;
 	}
 
 }
