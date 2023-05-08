@@ -64,7 +64,7 @@ svg {
 
 .line {
 	position: absolute;
-	top: 32%;
+	top: 30%;
 	left: 10px;
 	height: 50%;
 	border-right: 2px solid white;
@@ -84,6 +84,10 @@ svg {
 	color: black;
 }
 
+.c-h {
+	height: 500px;
+}
+
 @media screen and (max-width: 768px) {
 	body {
 		overflow-y: scroll;
@@ -94,7 +98,7 @@ svg {
 	}
 	.line {
 		position: relative;
-		top: 150px;
+		top: 210px;
 		left: 10px;
 		height: 20%;
 		width: 96%;
@@ -109,7 +113,7 @@ svg {
 		padding: auto;
 	}
 	.c-rm {
-		margin-top: 150px;
+		margin-top: 200px;
 	}
 	.c-mp {
 		margin-top: 40px;
@@ -157,7 +161,7 @@ svg {
 
 	.line {
 		position: relative;
-		top: 197px;
+		top: 150px;
 		left: 10px;
 		height: 20%;
 		width: 96%;
@@ -166,15 +170,15 @@ svg {
 	}
 
 	.c-rm {
-		margin-top: 100px;
+		margin-top: 170px;
 	}
 	.c-mp {
 		margin-top: 40px;
 	}
 	.c-p {
-		padding: 8%;
+		padding: 10%;
 	}
 	.c-h {
-		margin-top: 100px;
+		height: 280px;
 	}
 }
