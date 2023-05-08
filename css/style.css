@@ -138,6 +138,10 @@ svg {
 		border-radius: 2px;
 		z-index: 1;
 	}
+
+	.c-h {
+		height: 450px;
+	}
 }
 
 @media screen and (max-width: 435px) {
@@ -194,9 +198,12 @@ svg {
 		border-bottom: 2px solid white;
 	}
 	.c-rm {
-		margin-top: 40px;
+		margin-top: 55px;
 	}
 	.c-mp {
 		margin-top: 40px;
+	}
+	.c-h {
+		height: 270px;
 	}
 }
