@@ -64,6 +64,7 @@ svg {
 
 .line {
 	position: absolute;
+	top: 32%;
 	left: 10px;
 	height: 50%;
 	border-right: 2px solid white;
@@ -156,7 +157,7 @@ svg {
 
 	.line {
 		position: relative;
-		top: 97px;
+		top: 197px;
 		left: 10px;
 		height: 20%;
 		width: 96%;
@@ -173,5 +174,7 @@ svg {
 	.c-p {
 		padding: 8%;
 	}
-
+	.c-h {
+		margin-top: 100px;
+	}
 }
