@@ -161,7 +161,7 @@ svg {
 
 	.line {
 		position: relative;
-		top: 150px;
+		top: -40px;
 		left: 10px;
 		height: 20%;
 		width: 96%;
@@ -170,7 +170,7 @@ svg {
 	}
 
 	.c-rm {
-		margin-top: 170px;
+		margin-top: -30px;
 	}
 	.c-mp {
 		margin-top: 40px;
@@ -180,5 +180,23 @@ svg {
 	}
 	.c-h {
 		height: 280px;
+	}
+}
+
+@media screen and (max-width: 376px) {
+	.line {
+		position: relative;
+		top: 50px;
+		left: 10px;
+		height: 20%;
+		width: 96%;
+		border-right: none;
+		border-bottom: 2px solid white;
+	}
+	.c-rm {
+		margin-top: 40px;
+	}
+	.c-mp {
+		margin-top: 40px;
 	}
 }
