@@ -10,6 +10,7 @@ function checkLoadingscreen(loaded) {
     if(loaded == 'true') {
         document.querySelector(".display-none").classList.remove("display-none")
         document.querySelector("svg").classList.add("display-none")
+        document.querySelector("body").classList.add("bg-licorice")
         console.log("You have seen loading screen already")
     } else {
         setTimeout(removeDN, 3000)
