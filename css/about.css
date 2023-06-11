@@ -1,0 +1,23 @@
+body {
+    background-color: #1C110A;
+}
+
+  
+  .main {
+    place-items: center;
+    height: 100vh;
+  }
+
+  .c-f {
+    font-size: small;
+  }
+
+  .picture {
+    background-image: url(/media/pasfoto.jpg);
+    height: 50%;
+    transition: 0.5s linear;
+  }
+  .picture:hover {
+    background-image: none;
+    background-color: aqua;
+  }
