@@ -25,6 +25,12 @@ function removeDN() {
     document.querySelector("svg").classList.add("display-none")
     document.querySelector("body").classList.add("bg-licorice")
 }
+const imageSrc = document.querySelector(".team");
+imageSrc.addEventListener("mouseover", changeImage);
+
+function changeImage() {
+    imageSrc.src = "media/hitTeam.jpg";
+}
 
 let section = document.querySelectorAll(".g")
 let navLinks = document.querySelectorAll("ul li a")
@@ -40,9 +46,8 @@ window.onscroll = () => {
         if (top >= offset && top < offset + height) {
             navLinks.forEach(links =>{
                 links.classList.remove("current")
-                document.querySelector(`ul li a[href*='${id}']`).classList.add("current")
+                document.querySelector('ul li a[href*=' + id +']').classList.add("current")
             })
         }
     })
-
 }

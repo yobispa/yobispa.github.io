@@ -3,7 +3,15 @@
 nav {
 	font-size: 13px;
 }
+.team {
+	box-shadow: -6px 6px 9px;
+	color: white;
+}
 
+.skills-shadow {
+	box-shadow: -2.5px 4px 10px;
+	color: white;
+}
 .nav-item::after {
 	content: "";
 	display: block;
