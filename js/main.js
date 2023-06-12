@@ -25,3 +25,24 @@ function removeDN() {
     document.querySelector("svg").classList.add("display-none")
     document.querySelector("body").classList.add("bg-licorice")
 }
+
+let section = document.querySelectorAll(".g")
+let navLinks = document.querySelectorAll("ul li a")
+
+window.onscroll = () => {
+
+    section.forEach(sec => {
+        let top = window.scrollY
+        let offset = sec.offsetTop - 120;
+        let height = sec.offsetHeight
+        let id = sec.getAttribute("id")
+
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(links =>{
+                links.classList.remove("current")
+                document.querySelector(`ul li a[href*='${id}']`).classList.add("current")
+            })
+        }
+    })
+
+}

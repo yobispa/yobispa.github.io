@@ -31,8 +31,10 @@ nav {
 body {
 	background: black;
 	font-family: 'Open Sans', sans-serif;
-	overflow-y: hidden;
 }
+body::-webkit-scrollbar {
+	display: none;
+  }
 .display-none {
 	display: none;
 }
@@ -68,6 +70,10 @@ svg {
 	left: 10px;
 	height: 50%;
 	border-right: 2px solid white;
+}
+
+.c-w {
+	width: 90%;
 }
 
 .icons {
