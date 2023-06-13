@@ -9,7 +9,7 @@ function checkLoadingscreen(loaded) {
     
     if(loaded == 'true') {
         document.querySelector(".display-none").classList.remove("display-none")
-        document.querySelector("svg").classList.add("display-none")
+        document.querySelector(".svg-loader").classList.add("display-none")
         document.querySelector("body").classList.add("bg-licorice")
         console.log("You have seen loading screen already")
     } else {
@@ -22,7 +22,7 @@ function checkLoadingscreen(loaded) {
 
 function removeDN() {
     document.querySelector(".display-none").classList.remove("display-none")
-    document.querySelector("svg").classList.add("display-none")
+    document.querySelector(".svg-loader").classList.add("display-none")
     document.querySelector("body").classList.add("bg-licorice")
 }
 const imageSrc = document.querySelector(".team");
