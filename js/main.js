@@ -2,8 +2,7 @@
 console.log("JS Loaded")
 
 let loaded = sessionStorage.getItem("loadedKey")
-console.log(loaded)
-checkLoadingscreen(loaded)
+checkLoadingscreen(loaded);
 
 function checkLoadingscreen(loaded) {
     
@@ -32,22 +31,30 @@ function changeImage() {
     imageSrc.src = "media/hitTeam.jpg";
 }
 
-let section = document.querySelectorAll(".g")
 let navLinks = document.querySelectorAll("ul li a")
 
-window.onscroll = () => {
+let menuSection = document.querySelectorAll('menu li');
 
-    section.forEach(sec => {
-        let top = window.scrollY
-        let offset = sec.offsetTop - 120;
-        let height = sec.offsetHeight
-        let id = sec.getAttribute("id")
+// for clickable event
+menuSection.forEach(v=> {
+  v.onclick = (()=> {
+   setTimeout(()=> {
+      menuSection.forEach(j=> j.classList.remove('active'))
+    v.classList.add('active')
+  },300)
+   })
+})
 
-        if (top >= offset && top < offset + height) {
-            navLinks.forEach(links =>{
-                links.classList.remove("current")
-                document.querySelector('ul li a[href*=' + id +']').classList.add("current")
-            })
-        }
-    })
-}
+// for window scrolldown event
+
+window.onscroll = (()=> {
+  let mainSection = document.querySelectorAll('main section');
+
+  mainSection.forEach((v,i)=> {
+    let rect = v.getBoundingClientRect().y
+    if(rect < window.innerHeight-200){
+      menuSection.forEach(v=> v.classList.remove('active'))
+      menuSection[i].classList.add('active')
+    }
+  })
+})

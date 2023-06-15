@@ -20,7 +20,8 @@ nav {
 	background: #bcaaa4;
 	transition: 0.2s;
 }
-.current::after {
+
+.active::after {
 	content: "";
 	display: block;
 	width: 100%;
@@ -402,7 +403,7 @@ body::-webkit-scrollbar {
   }
   
   .main:hover .card {
-	margin: .5em;
+	margin: .2em;
 	border-radius: 10px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	border: 1px solid rgba(255, 255, 255, 0.3);
@@ -555,7 +556,7 @@ body::-webkit-scrollbar {
   
   .text {
 	position: absolute;
-	font-size: 0.9em;
+	font-size: 1em;
 	transition: .4s ease-in-out;
 	color: black;
 	text-align: center;
