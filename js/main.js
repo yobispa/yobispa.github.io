@@ -1,8 +1,50 @@
 //JS
 console.log("JS Loaded")
 
+const cards = document.querySelectorAll(".card")
+
+let navLinks = document.querySelectorAll("ul li a")
+let menuSection = document.querySelectorAll('menu li');
 let loaded = sessionStorage.getItem("loadedKey")
 checkLoadingscreen(loaded);
+
+for(let i = 0; i < cards.length; i++) {
+  cards[i].addEventListener("click", function() {
+    goToPage(i)
+  })
+}
+function goToPage(i) {
+
+  switch (i) {
+    case 0:
+      open('https://www.instagram.com/yoandelobispa/', '_blank');
+      break;
+    case 1:
+      location.href = ``
+      break;
+    case 2:
+      open('https://www.linkedin.com/in/yoandel-obispa-4b7398273/', '_blank');
+      break;
+    case 3:
+      open('mailto:yoandelobispa49@gmail.com', '_blank');
+      break;
+    case 4:
+      location.href = ``
+      break;
+    case 5:
+      open('https://wa.me/+31623018197', '_blank');
+      break;
+    case 6:
+      open('https://github.com/yobispa', '_blank');
+      break;
+    case 7:
+      location.href = ``
+      break;
+    case 8:
+      location.href = ``
+      break;
+  }
+}
 
 function checkLoadingscreen(loaded) {
     
@@ -30,10 +72,6 @@ imageSrc.addEventListener("mouseover", changeImage);
 function changeImage() {
     imageSrc.src = "media/hitTeam.jpg";
 }
-
-let navLinks = document.querySelectorAll("ul li a")
-
-let menuSection = document.querySelectorAll('menu li');
 
 // for clickable event
 menuSection.forEach(v=> {

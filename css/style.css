@@ -324,7 +324,7 @@ body::-webkit-scrollbar {
 	border-top-left-radius: 0px;
   }
   
-  .card:nth-child(3) .dribble {
+  .card:nth-child(3) .linkedin {
 	opacity: 0;
 	transition: .2s ease-in-out;
 	fill: #ffb5d2;
@@ -334,7 +334,7 @@ body::-webkit-scrollbar {
 	border-radius: 0px;
   }
   
-  .card:nth-child(4) .codepen {
+  .card:nth-child(4) .mail {
 	opacity: 0;
 	transition: .2s ease-in-out;
 	fill: black;
@@ -344,7 +344,7 @@ body::-webkit-scrollbar {
 	border-radius: 0px;
   }
   
-  .card:nth-child(5) .uiverse {
+  .card:nth-child(5) .facebook {
 	position: absolute;
 	margin-left: 0.2em;
 	margin-top: 0.2em;
@@ -356,10 +356,10 @@ body::-webkit-scrollbar {
 	border-radius: 0px;
   }
   
-  .card:nth-child(6) .discord {
+  .card:nth-child(6) .whatsapp {
 	opacity: 0;
 	transition: .2s ease-in-out;
-	fill: #8c9eff;
+	fill: #12fc2a;
   }
   
   .card:nth-child(7) {
@@ -427,19 +427,19 @@ body::-webkit-scrollbar {
 	opacity: 1;
   }
   
-  .main:hover .dribble {
+  .main:hover .linkedin {
 	opacity: 1;
   }
   
-  .main:hover .codepen {
+  .main:hover .mail {
 	opacity: 1;
   }
   
-  .main:hover .uiverse {
+  .main:hover .facebook {
 	opacity: 1;
   }
   
-  .main:hover .discord {
+  .main:hover .whatsapp {
 	opacity: 1;
   }
   
@@ -472,37 +472,25 @@ body::-webkit-scrollbar {
   }
   
   .card:nth-child(3):hover {
-	background-color: #ffb5d2;
+	background-color: #0072b1;
   }
   
-  .card:nth-child(3):hover .dribble {
+  .card:nth-child(3):hover .linkedin {
 	fill: white;
   }
   
   .card:nth-child(4):hover {
-	background-color: #1E1F26;
+	background-color: #FFD700;
   }
   
-  .card:nth-child(4):hover .codepen {
+  .card:nth-child(4):hover .mail {
 	fill: white;
   }
   
   .card:nth-child(5):hover {
-	animation: backgroundIMG .1s;
-	animation-fill-mode: forwards;
+	background-color: #3b5998;
   }
   
-  .card:nth-child(5):hover .uiverse #paint0_linear_501_142 stop {
-	stop-color: white;
-  }
-  
-  .card:nth-child(5):hover .uiverse #paint1_linear_501_142 stop {
-	stop-color: white;
-  }
-  
-  .card:nth-child(5):hover .uiverse #paint2_linear_501_142 stop {
-	stop-color: white;
-  }
   
   @keyframes backgroundIMG {
 	100% {
@@ -511,10 +499,10 @@ body::-webkit-scrollbar {
   }
   
   .card:nth-child(6):hover {
-	background-color: #8c9eff;
+	background-color: #1fc63e;
   }
   
-  .card:nth-child(6):hover .discord {
+  .card:nth-child(6):hover .whatsapp {
 	fill: white;
   }
   
@@ -584,6 +572,8 @@ body::-webkit-scrollbar {
 	}
 	.c-justify {
 		text-align: center;
+		margin: 0;
+		padding: 0;
 	}
 	.c-m {
 		margin: auto;
