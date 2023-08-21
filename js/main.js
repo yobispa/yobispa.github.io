@@ -3,7 +3,7 @@ console.log("JS Loaded")
 
 const cards = document.querySelectorAll(".card")
 
-let navLinks = document.querySelectorAll("ul li a")
+let navLinks = document.querySelectorAll("ul li a");
 let menuSection = document.querySelectorAll('menu li');
 let loaded = sessionStorage.getItem("loadedKey")
 checkLoadingscreen(loaded);
