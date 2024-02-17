@@ -3,6 +3,36 @@
 nav {
 	font-size: 13px;
 }
+
+.custom-shape-divider-top-1708176217 {
+    position: fixed;
+    top: 79.5px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+	z-index: 2;
+}
+
+.custom-shape-divider-top-1708176217 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 45px;
+}
+
+.custom-shape-divider-top-1708176217 .shape-fill {
+    fill: #F0EFE5;
+}
+
+.outline-4 {
+	position: absolute;
+	margin-left: 70px;
+	height: 290px;
+	outline: 1.9px solid white;
+	border-radius: 2px;
+	z-index: 1;
+}
 .team {
 	box-shadow: -6px 6px 9px;
 	color: white;
@@ -78,10 +108,10 @@ body::-webkit-scrollbar {
 
 .line {
 	position: absolute;
-	top: 30%;
-	left: 10px;
-	height: 50%;
-	border-right: 2px solid white;
+	height: 290px;
+	border-right: 2.5px solid white;
+	border-radius: 2px;
+	z-index: 1;
 }
 
 .c-w {
@@ -551,6 +581,7 @@ body::-webkit-scrollbar {
 	z-index: 3;
   }
 
+
 @media screen and (max-width: 768px) {
 	body {
 		overflow-y: scroll;
@@ -560,14 +591,15 @@ body::-webkit-scrollbar {
 		flex-direction: column;
 	}
 	.line {
-		position: relative;
-		top: 210px;
+		position: absolute;
+		top: 115px;
 		left: 10px;
-		height: 20%;
+		height: auto;
 		width: 96%;
 		border-right: none;
 		border-bottom: 2px solid white;
 	}
+	
 	.c-justify {
 		text-align: center;
 		margin: 0;
@@ -578,7 +610,7 @@ body::-webkit-scrollbar {
 		padding: auto;
 	}
 	.c-rm {
-		margin-top: 200px;
+		margin-top: 10px;
 	}
 	.c-mp {
 		margin-top: 40px;
@@ -591,6 +623,7 @@ body::-webkit-scrollbar {
 		width: 400px;
 		border-radius: 2px;
 		z-index: 2;
+		transition: transform 0.1s ease;
 	}
 	
 	.outline {
@@ -607,6 +640,17 @@ body::-webkit-scrollbar {
 	.c-h {
 		height: 450px;
 	}
+}
+
+@media (max-width: 767px) {
+	
+.custom-shape-divider-top-1708176217 {
+    top: 55.5px;
+}
+    .custom-shape-divider-top-1708176217 svg {
+        width: calc(100% + 1.3px);
+        height: 30px;
+    }
 }
 
 @media screen and (max-width: 435px) {
@@ -629,10 +673,10 @@ body::-webkit-scrollbar {
 	}
 
 	.line {
-		position: relative;
-		top: -40px;
+		position: absolute;
+		top: 120px;
 		left: 10px;
-		height: 20%;
+		height: auto;
 		width: 96%;
 		border-right: none;
 		border-bottom: 2px solid white;
@@ -654,16 +698,16 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 376px) {
 	.line {
-		position: relative;
-		top: 50px;
+		position: absolute;
+		top: 120px;
 		left: 10px;
-		height: 20%;
+		height: auto;
 		width: 96%;
 		border-right: none;
 		border-bottom: 2px solid white;
 	}
 	.c-rm {
-		margin-top: 55px;
+		margin-top: -40px;
 	}
 	.c-mp {
 		margin-top: 40px;
@@ -672,3 +716,4 @@ body::-webkit-scrollbar {
 		height: 270px;
 	}
 }
+

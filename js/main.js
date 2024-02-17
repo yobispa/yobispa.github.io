@@ -2,11 +2,27 @@
 console.log("JS Loaded")
 
 const cards = document.querySelectorAll(".card")
+  // JavaScript to toggle images on hover
+const imageContainer = document.querySelector('.image-container');
+const defaultImage = document.querySelector('.default-image');
+const hoverImage = document.querySelector('.hover-image');
 
 let navLinks = document.querySelectorAll("ul li a");
 let menuSection = document.querySelectorAll('menu li');
 let loaded = sessionStorage.getItem("loadedKey")
 checkLoadingscreen(loaded);
+
+
+imageContainer.addEventListener('mouseenter', function () {
+  defaultImage.style.display = 'none';
+  hoverImage.style.display = 'block';
+});
+
+imageContainer.addEventListener('mouseleave', function () {
+  defaultImage.style.display = 'block';
+  hoverImage.style.display = 'none';
+});
+
 
 for(let i = 0; i < cards.length; i++) {
   cards[i].addEventListener("click", function() {

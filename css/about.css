@@ -1,23 +1,46 @@
-body {
-    background-color: #1C110A;
-}
 
-  
-  .main {
-    place-items: center;
-    height: 100vh;
-  }
+      /* Style for the default image */
+      .default-image {
+        
+        z-index: 2;
+    }
 
-  .c-f {
-    font-size: small;
-  }
+    /* Style for the image on hover */
+    .hover-image {
+        display: none; 
+        z-index: 2;
+    }
 
-  .picture {
-    background-image: url(/media/pasfoto.jpg);
-    height: 50%;
-    transition: 0.5s linear;
-  }
-  .picture:hover {
-    background-image: none;
-    background-color: aqua;
-  }
+    /* Container to hold both images */
+    .image-container {
+        position: relative;
+        display: inline-block;
+        z-index: 2;
+    }
+
+    /* Overlay for hover effect */
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* Change the background color and opacity as needed */
+        transition: opacity 0.5s ease;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+    /* Overlay text */
+    .overlay-text {
+        color: white;
+        font-size: 20px;
+    }
+
+    /* Container hover effect */
+    .image-container:hover .overlay {
+        opacity: 1;
+    }
