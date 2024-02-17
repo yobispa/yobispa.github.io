@@ -683,7 +683,7 @@ body::-webkit-scrollbar {
 	}
 
 	.c-rm {
-		margin-top: -30px;
+		margin-top: -10px;
 	}
 	.c-mp {
 		margin-top: 40px;
@@ -707,7 +707,7 @@ body::-webkit-scrollbar {
 		border-bottom: 2px solid white;
 	}
 	.c-rm {
-		margin-top: -40px;
+		margin-top: 75px;
 	}
 	.c-mp {
 		margin-top: 40px;
