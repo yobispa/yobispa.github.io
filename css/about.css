@@ -40,7 +40,16 @@
         font-size: 20px;
     }
 
-    /* Container hover effect */
-    .image-container:hover .overlay {
+   /* Container hover effect */
+   .image-container:hover .overlay {
+    opacity: 1;
+    }   
+
+    /* Fade in animation for the images */
+    .image-container:hover .image {
+        opacity: 0;
+    }
+
+    .image-container:hover .hover-image {
         opacity: 1;
     }
