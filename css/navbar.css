@@ -15,34 +15,6 @@
     animation: flow 0.2s 1;
 }
 
-.navbar-toggler-custom-icon {
-    display: inline-block;
-    cursor: pointer;
-}
-.navbar-toggler{
-	outline: 3px solid black;
-	background: transparent;
-
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 3px;
-    background-color: black;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-.change .bar1 {
-transform: translate(0, 9px) rotate(-45deg);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-transform: translate(0, -9.5px) rotate(45deg);
-}
-
 @keyframes flow {
     0% {
         width: 0%;
