@@ -5,8 +5,6 @@ const cards = document.querySelectorAll(".card")
 const imageContainer = document.querySelector('.image-container');
 const defaultImage = document.querySelector('.default-image');
 const hoverImage = document.querySelector('.hover-image');
-const navbarToggler = document.querySelector(".navbar-toggler")
-navbarToggler.addEventListener("click", navbarChange)
 
 let navLinks = document.querySelectorAll("ul li a");
 let menuSection = document.querySelectorAll('menu li');
@@ -23,12 +21,6 @@ imageContainer.addEventListener('mouseleave', function () {
   defaultImage.style.display = 'block';
   hoverImage.style.display = 'none';
 });
-
-function navbarChange() {
-  document.querySelector(".navbar-toggler-custom-icon").classList.toggle("change");
-}
-
-
 
 for(let i = 0; i < cards.length; i++) {
   cards[i].addEventListener("click", function() {
