@@ -1,55 +1,53 @@
+/* Style for the default image */
+.default-image {
+    z-index: 2;
+}
 
-      /* Style for the default image */
-      .default-image {
-        
-        z-index: 2;
-    }
+/* Style for the image on hover */
+.hover-image {
+    display: none;
+    z-index: 2;
+}
 
-    /* Style for the image on hover */
-    .hover-image {
-        display: none; 
-        z-index: 2;
-    }
+/* Container to hold both images */
+.image-container {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
 
-    /* Container to hold both images */
-    .image-container {
-        position: relative;
-        display: inline-block;
-        z-index: 2;
-    }
+/* Overlay for hover effect */
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
 
-    /* Overlay for hover effect */
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.5); /* Change the background color and opacity as needed */
-        transition: opacity 0.5s ease;
-        opacity: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 2;
-    }
+/* Overlay text */
+.overlay-text {
+    color: white;
+    font-size: 20px;
+}
 
-    /* Overlay text */
-    .overlay-text {
-        color: white;
-        font-size: 20px;
-    }
-
-   /* Container hover effect */
-   .image-container:hover .overlay {
+/* Container hover effect */
+.image-container:hover .overlay {
     opacity: 1;
-    }   
+}
 
-    /* Fade in animation for the images */
-    .image-container:hover .image {
-        opacity: 0;
-    }
+/* Fade in animation for the images */
+.image-container:hover .image {
+    opacity: 0;
+}
 
-    .image-container:hover .hover-image {
-        opacity: 1;
-    }
+.image-container:hover .hover-image {
+    opacity: 1;
+}
