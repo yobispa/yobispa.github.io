@@ -7,20 +7,22 @@ const defaultImage = document.querySelector('.default-image');
 const hoverImage = document.querySelector('.hover-image');
 
 let navLinks = document.querySelectorAll("ul li a");
-let menuSection = document.querySelectorAll('menu li');
+let menuSection = document.querySelectorAll('.navbar-nav .nav-item');
 let loaded = sessionStorage.getItem("loadedKey")
 checkLoadingscreen(loaded);
 
 
-imageContainer.addEventListener('mouseenter', function () {
-    defaultImage.style.display = 'none';
-    hoverImage.style.display = 'block';
-});
+if (imageContainer && defaultImage && hoverImage) {
+    imageContainer.addEventListener('mouseenter', function () {
+        defaultImage.style.display = 'none';
+        hoverImage.style.display = 'block';
+    });
 
-imageContainer.addEventListener('mouseleave', function () {
-    defaultImage.style.display = 'block';
-    hoverImage.style.display = 'none';
-});
+    imageContainer.addEventListener('mouseleave', function () {
+        defaultImage.style.display = 'block';
+        hoverImage.style.display = 'none';
+    });
+}
 
 for (let i = 0; i < cards.length; i++) {
     cards[i].addEventListener("click", function () {
@@ -81,7 +83,9 @@ function removeDN() {
     document.querySelector("body").classList.add("bg-licorice")
 }
 const imageSrc = document.querySelector(".team");
-imageSrc.addEventListener("mouseover", changeImage);
+if (imageSrc) {
+    imageSrc.addEventListener("mouseover", changeImage);
+}
 
 function changeImage() {
     imageSrc.src = "media/hitTeam.jpg";
@@ -104,7 +108,7 @@ window.onscroll = (() => {
 
     mainSection.forEach((v, i) => {
         let rect = v.getBoundingClientRect().y
-        if (rect < window.innerHeight - 200) {
+        if (rect < window.innerHeight - 200 && menuSection[i]) {
             menuSection.forEach(v => v.classList.remove('active'))
             menuSection[i].classList.add('active')
         }

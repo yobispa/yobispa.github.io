@@ -1,19 +1,6 @@
-.nav-link::after {
-    content: "";
-    display: block;
-    width: 0px;
-    height: 2px;
-    background: #bcaaa4;
-    transition: 0.2s;
-}
-
+.nav-link::after,
 .current::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #0c2340;
-    animation: flow 0.2s 1;
+    content: none;
 }
 
 @keyframes flow {
